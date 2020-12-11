@@ -13,14 +13,17 @@ class ArgonAsset extends AssetBundle
     public $sourcePath = '@vendor/loutrux/yii2-argon-dashboard';
 
     public $css = [
-        'template/assets/vendor/nucleo/css/nucleo.css',
-        'template/assets/vendor/glyphicons/css/glyphicons.css',
-        'assets/navbar/navbar.css'        
+        'vendor/creativetimofficial/argon-design-system/assets/vendor/nucleo/css/nucleo.css',
+        'vendor/creativetimofficial/argon-design-system/assets/vendor/font-awesome/css/font-awesome.css',
+	    'vendor/creativetimofficial/argon-design-system/assets/vendor/font-awesome/css/font-awesome.css',
+	    'vendor/creativetimofficial/argon-design-system/assets/css/argon.css',
+	    'vendor/creativetimofficial/argon-design-system/assets/css/argon.css.map',
+	    'assets/navbar/navbar.css'
     ];
 
     public $js = [
-        'template/assets/js/argon.min.js',
-        'template/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js',
+		'vendor/creativetimofficial/argon-design-system/assets/js/argon.js',
+	    'vendor/creativetimofficial/argon-design-system/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js',
         'assets/navbar/navbar.js'
     ];
 
@@ -35,12 +38,7 @@ class ArgonAsset extends AssetBundle
      */
     public function init()
     {
-        if ((class_exists('\common\models\Appearence')))
-            $this->css[] = \common\models\Appearence::getCss();
-        else 
-            $this->css[] = 'template/assets/css/argon.css';
-
-        $this->css[] = 'assets/css/override.css';
+        $this->css[] = 'css/override.css';
         parent::init();
     }
 }
