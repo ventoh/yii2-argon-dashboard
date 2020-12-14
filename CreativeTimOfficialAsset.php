@@ -14,14 +14,14 @@ class CreativeTimOfficialAsset extends AssetBundle
 
     public $css = [
         'assets/js/plugins/nucleo/css/nucleo.css',
-	    'assets/js/plugins/nucleo/css/nucleo-svg.css',
+	    //'assets/js/plugins/nucleo/css/nucleo-svg.css',
         'assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css',
-	    'assets/js/plugins/jquery.scrollbar/jquery.scrollbar.css',
+	    //'assets/js/plugins/jquery.scrollbar/jquery.scrollbar.css',
 	    //'assets/js/plugins/bootstrap/dist/css/bootstrap.min.css',
 	    'assets/js/plugins/bootstrap/dist/css/bootstrap-reboot.min.css',
-	    'assets/js/plugins/bootstrap/dist/css/bootstrap-grid.min.css',
+	    //'assets/js/plugins/bootstrap/dist/css/bootstrap-grid.min.css',
 	    'assets/css/argon-dashboard.css',
-	    'assets/css/argon-dashboard.css.map',
+	    //'assets/css/argon-dashboard.css.map',
 
     ];
 
