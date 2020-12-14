@@ -10,22 +10,32 @@ use yii\web\AssetBundle;
  */
 class CreativeTimOfficialAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/creativetimofficial/argon-design-system';
+    public $sourcePath = '@vendor/creativetimofficial/argon-dashboard-free';
 
     public $css = [
-        'assets/vendor/nucleo/css/nucleo-icons.css',
-	    'assets/vendor/nucleo/css/nucleo-svg.css',
-        'assets/vendor/font-awesome/css/font-awesome.css',
-	    'assets/css/argon.css',
-	];
+        'assets/js/plugins/nucleo/css/nucleo.css',
+	    'assets/js/plugins/nucleo/css/nucleo-svg.css',
+        'assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css',
+	    'assets/js/plugins/jquery.scrollbar/jquery.scrollbar.css',
+	    //'assets/js/plugins/bootstrap/dist/css/bootstrap.min.css',
+	    'assets/js/plugins/bootstrap/dist/css/bootstrap-reboot.min.css',
+	    'assets/js/plugins/bootstrap/dist/css/bootstrap-grid.min.css',
+	    'assets/css/argon-dashboard.css',
+	    'assets/css/argon-dashboard.css.map',
+
+    ];
 
     public $js = [
-	    'assets/vendor/bootstrap/bootstrap.bundle.js',
-	    'assets/js/argon.js',
+    	//'assets/js/plugins/jquery/dist/jquery.min.js',
+	    'assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js',
+	    'assets/js/plugins/jquery.scrollbar/jquery.scrollbar.min.js',
+	    'assets/js/plugins/jquery-scroll-lock/dist/jquery-scrollLock.min.js',
 	];
 
     public $depends = [
+	   // 'yii\web\JqueryAsset',
         'yii\web\YiiAsset',
-        'yii\web\JqueryAsset',
+	    //'yii\bootstrap\BootstrapPluginAsset',
+
     ];
 }
