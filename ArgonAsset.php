@@ -13,23 +13,17 @@ class ArgonAsset extends AssetBundle
     public $sourcePath = '@vendor/loutrux/yii2-argon-dashboard';
 
     public $css = [
-        'vendor/creativetimofficial/argon-design-system/assets/vendor/nucleo/css/nucleo.css',
-        'vendor/creativetimofficial/argon-design-system/assets/vendor/font-awesome/css/font-awesome.css',
-	    'vendor/creativetimofficial/argon-design-system/assets/vendor/font-awesome/css/font-awesome.css',
-	    'vendor/creativetimofficial/argon-design-system/assets/css/argon.css',
-	    'vendor/creativetimofficial/argon-design-system/assets/css/argon.css.map',
-	    'assets/navbar/navbar.css'
+        'assets/navbar/navbar.css'
     ];
 
     public $js = [
-		'vendor/creativetimofficial/argon-design-system/assets/js/argon.js',
-	    'vendor/creativetimofficial/argon-design-system/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js',
-        'assets/navbar/navbar.js'
+		'assets/navbar/navbar.js'
     ];
 
     public $depends = [
         'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
+	    'loutrux\argon\CreativeTimOfficialAsset'
     ];
 
 
@@ -38,7 +32,7 @@ class ArgonAsset extends AssetBundle
      */
     public function init()
     {
-        $this->css[] = 'css/override.css';
+        $this->css[] = 'assets/css/override.css';
         parent::init();
     }
 }
